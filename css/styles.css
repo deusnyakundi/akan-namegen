@@ -1,0 +1,17 @@
+@import url('https:fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;')
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    font-weight: bold;
+}
+
+p{
+    padding: 0 20vw;
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+}
