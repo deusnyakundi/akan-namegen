@@ -40,16 +40,16 @@
                 <h3>Enter data here.</h3>
                 <div class="mb-3 form-item row">
                     <label for="day" class="col-form-label col-sm-4">Day</label>
-                    <input type="number" maxlength="2" name="day" class="form-control col-sm-8"  placeholder="1">
+                    <input type="number" onkeyup="validateDay()" maxlength="2" name="day" class="form-control col-sm-8"  placeholder="1">
                     
                 </div>
                 <div class="mb-3 form-item row">
                     <label for="month" class="col-form-label col-sm-4">Month</label>
-                    <input type="number"  maxlength="2" class="form-control col-sm-8" placeholder="1">
+                    <input type="number"  onkeyup="validateMonth()"  maxlength="2" class="form-control col-sm-8" placeholder="1">
                    
                 </div>
                 <div class="mb-3 form-item row">
-                    <label for="year" class="col-form-label col-sm-4">Year</label>
+                    <label for="year" onkeyup="validateYear()" class="col-form-label col-sm-4">Year</label>
                     <input type="number"  maxlength="4" required class="form-control col-sm-8"  placeholder="1980">
                     
                 </div>

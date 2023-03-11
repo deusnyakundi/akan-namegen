@@ -47,3 +47,4 @@ function dayOfTheWeek(){
     console.log(day)
     return day;
 }
+
