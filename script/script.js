@@ -32,3 +32,18 @@ function validateYear(){
     }
 };
 
+
+//Function to get the day of the week from dates
+function dayOfTheWeek(){
+    validateDay()
+    validateMonth()
+    validateYear()
+    var DD = document.getElementById('day').value
+    var MM = document.getElementById('month').value - 1
+    var year = document.getElementById('year').value
+
+    var dateOfBirth = new Date(year, MM, DD)
+    let day = dateOfBirth.getDay()
+    console.log(day)
+    return day;
+}
