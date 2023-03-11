@@ -48,3 +48,22 @@ function dayOfTheWeek(){
     return day;
 }
 
+//Function to get the gender
+
+function userGender(){
+    let male = document.getElementById('male').checked
+    let female = document.getElementById('female').checked
+    let genderError
+    if( male === true){
+        var gender = "male"
+        return gender;
+    }else if(female === true){
+        var gender = "female"
+        return gender;
+    }else{
+        genderError="Please select a gender"
+        document.getElementById('gender-error').innerHTML = genderError
+    }
+}
+
+
