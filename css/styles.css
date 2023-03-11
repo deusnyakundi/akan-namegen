@@ -33,6 +33,9 @@ h3{
 .form-center{
     display:flex;
     justify-content: center;
+    border-radius: 0.5%;
+
+    margin-bottom: auto;
 }
 
 
@@ -50,5 +53,7 @@ h3{
     padding: 0 32px;
    
 }
+
+
 
 

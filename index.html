@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <!--Flatpckr-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,35 +38,40 @@
         <h4>Generate a name of Ghanian origin based on the day of the week on which you were born</h4>
 
          <!--Input form-->
-         <div class="container form-center">
-            <form id="akan-form" class="akan-form" name="akan-form">
-                <h3>Enter data here.</h3>
-                <div class="mb-3 form-item row">
-                    <label for="day" class="col-form-label col-sm-4">Day</label>
-                    <input type="number" onkeyup="validateDay()" maxlength="2" name="day" class="form-control col-sm-8"  placeholder="1">
-                    <span id="day-error" class="error" role=""></span>
-                </div>
-                <div class="mb-3 form-item row">
-                    <label for="month" class="col-form-label col-sm-4">Month</label>
-                    <input type="number"  onkeyup="validateMonth()"  maxlength="2" class="form-control col-sm-8" placeholder="1">
-                    <span id="month-error" class="error" role=""></span>
-                </div>
-                <div class="mb-3 form-item row">
-                    <label for="year" onkeyup="validateYear()" class="col-form-label col-sm-4">Year</label>
-                    <input type="number"  maxlength="4" required class="form-control col-sm-8"  placeholder="1980">
-                    <span id="year-error" class="error" role=""></span>
-                </div>
+            <div class="container form-center">
+                <form id="akan-form" class="akan-form" name="akan-form">
+                    <h3>Enter Your DoB here.</h3>
+                    <input class="form-control" type="datetime" placeholder="Select Your Date of Birth">
 
-                <div class="d-flex">
-                    <div class="align-self-center mx-auto">
+                        <label for="day" class="">Year
+                            <input id="day-input" type="number" name="yob" placeholder="YYYY" value="" required>
+                        </label>
+
+                        <label for="day" class="">Month
+                            <input id="day-input" type="number" name="mob" placeholder="MM" value="" required>
+                        </label>
+
+                        <label for="day" class="">Day
+                            <input id="day-input" type="number" name="dob" placeholder="DD" value="" required>
+                        </label>
+
+                        <br>
+
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
-                            <label class="form-check-label" for="male">Male</label>
+                            
+                            <label class="form-check-label" for="male">Male
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male">
+                            </label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
-                            <label class="form-check-label" for="female">Female</label>
+                            
+                            <label class="form-check-label" for="female">Female
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
+                            </label>
                         </div>
+
+            </div>
+                
                         <span id="gender-error" class="error" role=""></span>
                     </div><br>
                 </div>
@@ -91,6 +99,17 @@
 
 
     </div>
+
+    <!--Bootstrap JS-->
+    <script src=”https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js” integrity=”sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo” crossorigin=”anonymous”></script>
+    
+    <!--Flatpickr JS-->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script> flatpickr("input[type=datetime]", {}); </script> 
+    
+
+    
     <script src="scripts/script.js"></script>
+    <script src=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js” integrity=”sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/” crossorigin=”anonymous”></script>
 </body>
 </html>
