@@ -41,17 +41,17 @@
                 <div class="mb-3 form-item row">
                     <label for="day" class="col-form-label col-sm-4">Day</label>
                     <input type="number" onkeyup="validateDay()" maxlength="2" name="day" class="form-control col-sm-8"  placeholder="1">
-                    
+                    <span id="day-error" class="error" role=""></span>
                 </div>
                 <div class="mb-3 form-item row">
                     <label for="month" class="col-form-label col-sm-4">Month</label>
                     <input type="number"  onkeyup="validateMonth()"  maxlength="2" class="form-control col-sm-8" placeholder="1">
-                   
+                    <span id="month-error" class="error" role=""></span>
                 </div>
                 <div class="mb-3 form-item row">
                     <label for="year" onkeyup="validateYear()" class="col-form-label col-sm-4">Year</label>
                     <input type="number"  maxlength="4" required class="form-control col-sm-8"  placeholder="1980">
-                    
+                    <span id="year-error" class="error" role=""></span>
                 </div>
                     <div class="d-flex">
                         <div class="align-self-center mx-auto">
