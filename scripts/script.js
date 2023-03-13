@@ -1,5 +1,6 @@
+     // validation functions
 
-    // validation functions
+    //Function to Validate the day entered
     function dayValidator () {
         let day = parseInt(document.getElementById('day').value)
     let dayError;
@@ -17,7 +18,7 @@
     }
 
     
-
+//Function to Validate the month entered
 
     function monthValidator () {
         let month = parseInt(document.getElementById('month').value)
@@ -30,6 +31,7 @@
     }
     }
 
+    //Function to Validate the year entered
     function yearValidator(){
             let year = document.getElementById('year').value
             let yearError
@@ -56,39 +58,40 @@
         return day;
     }
 
-function userGender(){
-    let male = document.getElementById('male').checked
-    let female = document.getElementById('female').checked
-    let genderError
-    if( male === true){
-        var gender = "male"
-        return gender;
-    }else if(female === true){
-        var gender = "female"
-        return gender;
-    }else{
-        genderError="Please select a gender"
-        document.getElementById('gender-error').innerHTML = genderError
+
+    //Function to obtaint he gender entered
+    function userGender(){
+        let male = document.getElementById('male').checked
+        let female = document.getElementById('female').checked
+        let genderError
+        if( male === true){
+            var gender = "male"
+            return gender;
+        }else if(female === true){
+            var gender = "female"
+            return gender;
+        }else{
+            genderError="Please select a gender"
+            document.getElementById('gender-error').innerHTML = genderError
+        }
     }
-}
 
 
 //Function to retrieve the Akan name
-function akanName(){
+        function akanName(){
 
-    
-    //Hide form when the Akan name is displayed
-    var hideForm = document.getElementById('akan-form')
-    if (hideForm.style.display === "none") {
-        hideForm.style.display = "block";
-      } else {
-        hideForm.style.display = "none";
-      }
+            
+            //Hide form when the Akan name is displayed
+            var hideForm = document.getElementById('akan-form')
+            if (hideForm.style.display === "none") {
+                hideForm.style.display = "block";
+            } else {
+                hideForm.style.display = "none";
+            }
 
-    let sharedGender = userGender();
-    let weekDay = dayOfTheWeek()
- 
-
+            let sharedGender = userGender();
+            let weekDay = dayOfTheWeek()
+        
 
 
   //Array with days of the week
