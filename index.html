@@ -44,17 +44,17 @@
                     <input class="form-control" type="datetime" placeholder="Select Your Date of Birth">
 
                         <label for="year" class="">Year
-                            <input id="year" type="number" name="yob" placeholder="YYYY" value="" required>
+                            <input id="year" onkeyup="yearValidator()" type="number" name="yob" placeholder="YYYY" value="" required>
                         </label>
                         <span id="year-error" class="error" role=""></span>
 
                         <label for="month" class="">Month
-                            <input id="month" type="number" name="mob" placeholder="MM" value="" required>
+                            <input id="month" onkeyup="monthValidator ()" type="number" name="mob" placeholder="MM" value="" required>
                         </label>
                         <span id="month-error" class="error" role=""></span>
 
                         <label for="day" class="">Day
-                            <input id="day" type="number" name="dob" placeholder="DD" value="" required>
+                            <input id="day" onkeyup="dayValidator ()" type="number" name="dob" placeholder="DD" value="" required>
                         </label>
                         <span id="day-error" class="error" role=""></span>
 
@@ -80,7 +80,7 @@
                 </div>
                     <div class="d-flex">
                         <div class="align-self-center mx-auto">
-                            <button type="button" class="btn btn-primary" onclick="akanName ()">Search</button>
+                            <button id="searchbtn" type="button" class="btn btn-primary" onclick="akanName ()">Search</button>
                         </div>
                     </div>
 

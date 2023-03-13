@@ -1,16 +1,22 @@
 
-
     // validation functions
     function dayValidator () {
         let day = parseInt(document.getElementById('day').value)
     let dayError;
 
     if(isNaN(day) || day<=0 || day>31){
+       
         dayError = "Day can only be from 1 to 31"
         document.getElementById('day-error').innerHTML = dayError
+        document.getElementById('searchbtn').setAttribute('disabled','disabled')
+        
         return dayError
+        
     }
+    
     }
+
+    
 
 
     function monthValidator () {
@@ -20,6 +26,7 @@
     if(isNaN(month) || month<=0 || month>12){
         monthError = "There are only 12 months in a year."
         document.getElementById('month-error').innerHTML = monthError
+        document.getElementById('searchbtn').setAttribute('disabled','disabled')
     }
     }
 
@@ -30,6 +37,7 @@
         if(year.length > 4 || isNaN(year)){
             yearError = "Invalid input."
             document.getElementById('year-error').innerHTML = yearError
+            document.getElementById('searchbtn').setAttribute('disabled','disabled')
         }
     };
 
@@ -67,6 +75,8 @@ function userGender(){
 
 //Function to retrieve the Akan name
 function akanName(){
+
+    
     //Hide form when the Akan name is displayed
     var hideForm = document.getElementById('akan-form')
     if (hideForm.style.display === "none") {
@@ -114,4 +124,3 @@ function akanName(){
     console.log(sharedGender, weekDay)
 
 }
-
