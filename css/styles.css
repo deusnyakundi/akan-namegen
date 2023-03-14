@@ -10,6 +10,10 @@ p{
     padding: 0 20vw;
 }
 
+h2{
+    font-weight:bolder;
+    font-family: fantasy;
+}
 h3{
     text-align: center;
     font-weight: bold;
