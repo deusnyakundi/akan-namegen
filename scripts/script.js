@@ -94,36 +94,36 @@
         
 
 
-  //Array with days of the week
-  let daysOfWeek = [
-    "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-  ];
+            //Array with days of the week
+            let daysOfWeek = [
+                "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+            ];
 
-   //Array with Akan names for men
-  let maleAkanNames = [
-    "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
-  ];
+            //Array with Akan names for men
+            let maleAkanNames = [
+                "Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"
+            ];
 
-   //Array with Akan names for women
-  let femaleAkanNames = [
-    "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
-  ];
+            //Array with Akan names for women
+            let femaleAkanNames = [
+                "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
+            ];
 
    
-    if(sharedGender==='male'){
-        var userName = maleAkanNames[weekDay]
-        var birthDay = daysOfWeek[weekDay]
-        response = `Your were born on a ${birthDay} and your Akan name is ${userName}!!`
-        document.getElementById('display-name').innerHTML = response
-    }else if(sharedGender==='female'){
-        var userName = femaleAkanNames[weekDay]
-        var birthDay = daysOfWeek[weekDay]
-        response = `Your were born on a ${birthDay} and your Akan name is ${userName}!!`
-        document.getElementById('display-name').innerHTML = response
-    }else{
-        alert("The form is missing some data!")
-        hideForm.style.display = "block";
-    }
-    console.log(sharedGender, weekDay)
+            if(sharedGender==='male'){
+                var userName = maleAkanNames[weekDay]
+                var birthDay = daysOfWeek[weekDay]
+                response = `Your were born on a ${birthDay} and your Akan name is ${userName}!!`
+                document.getElementById('display-name').innerHTML = response
+            }else if(sharedGender==='female'){
+                var userName = femaleAkanNames[weekDay]
+                var birthDay = daysOfWeek[weekDay]
+                response = `Your were born on a ${birthDay} and your Akan name is ${userName}!!`
+                document.getElementById('display-name').innerHTML = response
+            }else{
+                alert("The form is missing some data!")
+                hideForm.style.display = "block";
+            }
+            console.log(sharedGender, weekDay)
 
 }
