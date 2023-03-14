@@ -43,46 +43,47 @@
         
 
          <!--Input form-->
-            <div class="container form-center">
-                <form id="akan-form" class="akan-form" name="akan-form">
-                    <h3>Enter Your DoB here.</h3>
-                    <input class="form-control" type="datetime" placeholder="Select Your Date of Birth">
+                <div class="container form-center">
+                    <form id="akan-form" class="akan-form" name="akan-form">
+                        <h3>Enter Your DoB here.</h3>
+                        <input class="form-control" type="datetime" placeholder="Select Your Date of Birth">
 
-                        <label for="year" class="">Year
-                            <input id="year" onkeyup="yearValidator()" type="number" name="yob" placeholder="YYYY" value="" required>
-                        </label>
-                        <span id="year-error" class="error" role=""></span>
-
-                        <label for="month" class="">Month
-                            <input id="month" onkeyup="monthValidator ()" type="number" name="mob" placeholder="MM" value="" required>
-                        </label>
-                        <span id="month-error" class="error" role=""></span>
-
-                        <label for="day" class="">Day
-                            <input id="day" onkeyup="dayValidator ()" type="number" name="dob" placeholder="DD" value="" required>
-                        </label>
-                        <span id="day-error" class="error" role=""></span>
-
-                        <br>
-
-                        <div class="form-check form-check-inline">
-                            
-                            <label class="form-check-label" for="male">Male
-                                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                            <label for="year" class="">Year
+                                <input id="year" onkeyup="yearValidator()"  type="number" name="yob" placeholder="YYYY" value="" required>
                             </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            
-                            <label class="form-check-label" for="female">Female
-                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
-                            </label>
-                        </div>
+                            <span id="year-error" class="error" role=""></span>
 
-            </div>
-                
-                        <span id="gender-error" class="error" role=""></span>
-                    </div><br>
+                            <label for="month" class="">Month
+                                <input id="month" onkeyup="monthValidator ()" type="number" name="mob" placeholder="MM" value="" required>
+                            </label>
+                            <span id="month-error" class="error" role=""></span>
+
+                            <label for="day" class="">Day
+                                <input id="day" onkeyup="dayValidator ()" type="number" name="dob" placeholder="DD" value="" required>
+                            </label>
+                            <span id="day-error" class="error" role=""></span>
+
+                            <br>
+                            
+
+                                <div class="form-check form-check-inline">
+                                    
+                                    <label class="form-check-label" for="male">Male
+                                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    
+                                    <label class="form-check-label" for="female">Female
+                                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                    </label>
+                                </div>
+                            
+
                 </div>
+                
+                        <div> <span id="gender-error" class="error" role=""></span></div><br>
+                
                     <div class="d-flex">
                         <div class="align-self-center mx-auto">
                             <button id="searchbtn" type="button" class="btn btn-primary" onclick="akanName ()">Search</button>
